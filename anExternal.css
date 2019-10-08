@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'sans-serif', serif;
+    font-size: 7em;
+    font-weight: 500;
+    float: left;
+}
+
+h2 {
+    background-color: red;
+    border-radius: 20px
+}
+
+img {
+  border-radius: 20px
+}
