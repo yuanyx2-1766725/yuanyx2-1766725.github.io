@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSE Major Application</title>
+  <style>
+  	body {
+  		background-image: url("https://robinsoncenter.uw.edu/wp-content/uploads/2015/01/Husky.png");
+  		background-repeat: no-repeat;
+  		background-position: left;
+  	}
+  </style>
+</head>
+<body>
+<h2>CSE Major Application</h2>
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset>
+		<legend>UW Account</legend>
+		<div class="field">
+			<label>Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+			<input type="password" name="password_r">
+		</div>
+  </fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			<label>First Name:</label> 
+			<input type="text" name="firstname"><br>
+			<label>Last Name:</label>
+			<input type="text" name="lastname">
+		</div>
+		<div class="field">
+			<label>Year of Graduation:</label>
+			<select name="year">
+			<option value="" selected="true">Choose a year</option>
+				<option value="19">2019</option>
+				<option value="20">2020</option>
+				<option value="21">2021</option>
+				<option value="22">2022</option>
+			</select>
+		</div>
+		<div class="field">
+			<label>Gender:</label><br>
+			<input type="radio" name="gender" value="female"> Female<br>
+      		<input type="radio" name="gender" value="male"> Male<br>
+      		<input type="radio" name="gender" value="other"> Other
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Grade</legend>
+		<div class="field">
+			<label>Do you want to be considered for cse department honor program?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field">
+			<label>What type of degress are you seeking? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="degree" value="BA">Bachelor of Art</li>
+				<li><input type="checkbox" name="degree" value="BS">Bachelor of Science</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Prerequisites Grades</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>CSE 142</th>
+					<th>CSE 143 </th>
+					<th>MATH 124</th>
+					<th>MATH 125</th>
+					<th>MATH 126</th>
+					<th>ENGL 130</th>
+					<th>ENGL 131</th>
+				</tr>
+				<tr>
+					<th>Your GPA</th>
+					<td><input type="gpa" size="5" name="CSE142"></td>
+					<td><input type="gpa" size="5" name="CSE143"></td>
+					<td><input type="gpa" size="5" name="math124"></td>
+					<td><input type="gpa" size="5" name="math125"></td>
+					<td><input type="gpa" size="5" name="math126"></td>
+					<td><input type="gpa" size="5" name="ENGL131"></td>
+					<td><input type="gpa" size="5" name="ENGL132"></td>
+				</tr>
+			</table><br>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>1. Why do you choose this major? (300 words maximum)</label><br>
+			<textarea name="choose" rows="6" cols="60"></textarea>
+
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+</form>
+</body>
+</html>
